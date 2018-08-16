@@ -1,10 +1,12 @@
 
-        
-       
+// author: Blake Tibbitts
 
+       
+        //wait for page to load DOM and all elements before starting to run functions
         window.onload = function () { 
             makeGrid(16); 
             addListeners(); }
+
         function addListeners() {
             document.getElementById('resize').addEventListener('click', function() {
 
@@ -35,9 +37,10 @@
             }
 
         }
-        // const base = 0;
+        // Function takes user input for use in grid creation, minor error-checking
         function getDimension() {
             var dimensions = prompt("Enter one side of a square: ");
+
             while (!parseInt(dimensions)) {
                 dimensions = prompt("please enter a number greater than 0: ")
             }
@@ -46,14 +49,14 @@
             }
             return parseInt(dimensions);
         }
-
+        //takes input side of square to create a grid of x by x size
         function makeGrid(Dimension) {
             var container = document.getElementById('container');
             container.innerHTML = '';
             container.style.gridTemplateRows = '';
             container.style.gridTemplateColumns = '';
 
-            // base = parseInt(dimensions[0]);
+            // first loop creates 16 rows, interior loop 16 columns, CSS added at the end to make the grid items fit.
             for (var j = 0; j < Dimension; j++) {
                 for (var i = 0; i < Dimension; i++) {
                     const newDiv = document.createElement('div');
