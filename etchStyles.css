@@ -1,0 +1,74 @@
+
+        #container {
+            position: relative;
+            /*margin: 0 auto;
+            /*padding-top: auto;*/
+            height: 500px;
+            width: 500px;
+            display: grid;
+            grid-template-columns: ;
+            grid-template-rows: ;
+            border-color: black;
+            border-style: solid;
+            border-width: 5px;
+        }
+
+        .frame {
+            position: relative;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 800px;
+            width: 800px;
+            background-color: red;
+            border-radius: 15%;
+            border-style:double;
+            border-color: black;
+            font-family: cursive;
+        }
+
+        .gridCell {
+            background: white;
+            border-color: grey;
+            border-width: 1px;
+            border-style: solid;
+
+        }
+
+        .clicked {
+            background: black;
+
+        }
+
+        header {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .buttons {
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+            justify-content: center;
+
+        }
+
+        .btn {
+            height: 45px;
+            width: 160px;
+            background-color: white;
+            color: black;
+            border: 2px solid #555555;
+            margin-right: 20px;
+            font-size: 25px;
+            font-family: sans-serif;
+
+        }
+
+        .btn:hover {
+            background-color: #555555;
+            color: white;
+        }
+
