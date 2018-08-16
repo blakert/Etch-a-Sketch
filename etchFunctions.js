@@ -17,7 +17,7 @@
             })
 
         }
-
+            //iterate through child items, revert changed colors to white
         function clearGrid() {
             var children = document.getElementById('container').childNodes;
             achildren = Array.from(children);
@@ -29,7 +29,7 @@
 
             })
         }
-
+            //remove standard class - add color changed class 
         function changeColor(div) {
             if (div.classList.contains('gridCell')) {
                 div.classList.toggle('gridCell');
